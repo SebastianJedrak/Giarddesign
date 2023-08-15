@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         green: "#1B5B31",
         beige: "#DCC1AB",
+        beigeTransparent: "rgba(220,	193,	171, 0.5)",
         lightBeige: "#F5F0EC"
       }
     },

@@ -609,6 +609,10 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -634,6 +638,10 @@ video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.max-h-\[40rem\] {
+  max-height: 40rem;
 }
 
 .min-h-\[700px\] {
@@ -700,6 +708,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .whitespace-nowrap {
@@ -781,8 +793,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-lightBeige {
-  --tw-gradient-to: #F5F0EC var(--tw-gradient-to-position);
+.to-beigeTransparent {
+  --tw-gradient-to: rgba(220,	193,	171, 0.5) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
