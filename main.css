@@ -534,12 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-3 {
-  margin: 0.75rem;
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 body {
   background-color: gray;
-  color: white;
-  font-family: 'Inter', sans-serif;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
 }
