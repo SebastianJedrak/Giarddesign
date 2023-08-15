@@ -597,6 +597,20 @@ video {
   margin-left: 13rem;
 }
 
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -661,6 +675,10 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.self-baseline {
+  align-self: baseline;
 }
 
 .whitespace-nowrap {
@@ -748,6 +766,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-green {
