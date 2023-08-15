@@ -718,6 +718,10 @@ video {
   gap: 8rem;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -742,6 +746,11 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-b-green {
