@@ -24,3 +24,10 @@ h1 {
     @apply px-5 py-3 rounded-full w-max;
   }
 }
+
+@media( max-width: 650px ){
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}

@@ -544,6 +544,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .ml-12 {
   margin-left: 3rem;
 }
@@ -552,12 +560,8 @@ video {
   margin-left: 0.5rem;
 }
 
-.mb-11 {
-  margin-bottom: 2.75rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -568,36 +572,24 @@ video {
   height: 1.5rem;
 }
 
-.w-20 {
-  width: 5rem;
+.min-h-\[700px\] {
+  min-height: 700px;
 }
 
-.w-2 {
-  width: 0.5rem;
+.w-\[45rem\] {
+  width: 45rem;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
-.w-16 {
-  width: 4rem;
+.w-full {
+  width: 100%;
 }
 
 .cursor-pointer {
   cursor: pointer;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-around {
@@ -625,6 +617,11 @@ video {
   border-color: rgb(27 91 49 / var(--tw-border-opacity));
 }
 
+.bg-beige {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 193 171 / var(--tw-bg-opacity));
+}
+
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(27 91 49 / var(--tw-bg-opacity));
@@ -635,19 +632,31 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-beige {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 193 171 / var(--tw-bg-opacity));
+.bg-\[url\(\'\.\/src\/img\/hero-img\.png\'\)\] {
+  background-image: url('./src/img/hero-img.png');
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-green {
@@ -677,7 +686,20 @@ h1 {
   line-height: 4.375rem;
 }
 
-@media (max-width: 639px) {
+@media( max-width: 650px ){
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .md\:bg-none {
+    background-image: none;
+  }
+}
+
+@media (max-width: 650px) {
   .sm\:ml-6 {
     margin-left: 1.5rem;
   }
@@ -686,7 +708,20 @@ h1 {
     display: none;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
