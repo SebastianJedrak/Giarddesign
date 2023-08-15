@@ -608,6 +608,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -639,6 +643,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .-rotate-90 {
@@ -888,6 +896,14 @@ h3 {
     margin-left: 1.5rem;
   }
 
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .sm\:mr-4 {
+    margin-right: 1rem;
+  }
+
   .sm\:hidden {
     display: none;
   }
@@ -916,6 +932,10 @@ h3 {
     gap: 1rem;
   }
 
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -923,5 +943,9 @@ h3 {
 
   .sm\:text-center {
     text-align: center;
+  }
+
+  .sm\:first\:gap-0:first-child {
+    gap: 0px;
   }
 }
