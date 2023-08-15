@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        green: "#1B5B31",
+        beige: "#DCC1AB",
+        lightBeige: "#F5F0EC"
+      }
+    },
     screens: {
       '2xl': {'max': '1535px'},
       'xl': {'max': '1279px'},
