@@ -22,11 +22,11 @@
   </head>
   <body>
     <header class="flex justify-around py-6 bg-white">
-      <img src="./src/img/logo.svg" alt="logo" />
+      <img class="sm:hidden" src="./src/img/logo.svg" alt="logo" />
       <div class="flex">
         <nav>
-          <ul class="flex gap-12">
-            <li class="flex">
+          <ul class="flex gap-12 sm:gap-6 whitespace-nowrap">
+            <li class="flex cursor-pointer">
               Oferta<img
                 class="h-6"
                 src="./src/img/expand_more.svg"
@@ -38,7 +38,11 @@
             <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <img class="ml-12 h-6" src="./src/img/glass.svg" alt="search" />
+        <img
+          class="ml-12 h-6 cursor-pointer sm:ml-6"
+          src="./src/img/glass.svg"
+          alt="search"
+        />
       </div>
     </header>
   </body>
