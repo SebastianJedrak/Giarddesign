@@ -6,6 +6,21 @@ body {
   background-color: gray;
   color: black;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.375rem;
+}
+
+@layer components {
+  .btn {
+    @apply px-5 py-3 rounded-full w-max;
+  }
 }
