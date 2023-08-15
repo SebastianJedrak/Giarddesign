@@ -791,6 +791,34 @@ video {
   background-image: url('./src/img/hero-img.png');
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-violet-500 {
+  --tw-gradient-from: #8b5cf6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(139 92 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-beige {
+  --tw-gradient-from: #DCC1AB var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(220 193 171 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-fuchsia-500 {
+  --tw-gradient-to: #d946ef var(--tw-gradient-to-position);
+}
+
+.to-lightBeige {
+  --tw-gradient-to: #F5F0EC var(--tw-gradient-to-position);
+}
+
 .bg-cover {
   background-size: cover;
 }
