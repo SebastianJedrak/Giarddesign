@@ -1008,6 +1008,10 @@ h3 {
     margin-right: 1rem;
   }
 
+  .sm\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .sm\:hidden {
     display: none;
   }
