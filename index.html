@@ -24,7 +24,7 @@
     <!-- NAVIGATION -->
     <header class="flex justify-around py-6 bg-white">
       <img class="sm:hidden" src="./src/img/logo.svg" alt="logo" />
-      <div class="flex">
+      <div class="flex sm:justify-around sm:w-4/5">
         <nav>
           <ul class="flex gap-12 sm:gap-4 whitespace-nowrap">
             <li class="flex cursor-pointer">
@@ -48,9 +48,9 @@
     </header>
 
     <!-- HERO BLOCK -->
-    <section class="flex items-center bg-beige sm:justify-center ">
+    <section class="flex items-center bg-beige sm:justify-center">
       <div class="px-20 w-[75rem] sm:px-10 sm:text-center md:py-20">
-        <h1 class="mb-11 ">Nowoczesna aranżacja Twojego ogrodu</h1>
+        <h1 class="mb-11">Nowoczesna aranżacja Twojego ogrodu</h1>
         <p class="mb-20">
           Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
           realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
@@ -72,17 +72,49 @@
       <div
         class="relative inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:hidden"
       >
-        <div class="flex  absolute bottom-0 right-0 lg:hidden">
+        <div class="flex absolute bottom-0 right-0 lg:hidden">
           <img
             src="./src/img/arrow_back.svg"
             alt="backwards"
-            class="h-12  bg-lightBeige p-1 cursor-pointer"
+            class="h-12 bg-lightBeige p-1 cursor-pointer"
           />
           <img
-          src="./src/img/arrow_forward.svg"
-          alt="forwards"
-          class="h-12  bg-lightBeige p-1 cursor-pointer"
-        />
+            src="./src/img/arrow_forward.svg"
+            alt="forwards"
+            class="h-12 bg-lightBeige p-1 cursor-pointer"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER BLOCK -->
+    <section class="bg-lightBeige flex flex-col">
+      <div>
+        <h2>Działamy kompleksowo</h2>
+        <p>
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+          nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
+          Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+          etapie posłużymy radą i wieloletnim doświadczeniem.
+        </p>
+      </div>
+      <div class="flex">
+        <!-- CARD 1 -->
+        <div class="px-10 py-12 bg-white rounded-3xl">
+          <img
+            src="./src/img/offer-pen-icon.png"
+            alt="pen"
+            class="h-12 p-1 cursor-pointer mb-8"
+          />
+          <h3 class="mb-3">Projekty</h3>
+          <p class="mb-16"> 
+            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+            wykorzystaniem istniejącej przestrzeni.
+          </p>
+          <a href="#" class="flex"
+            >Dowiedz się więcej
+            <img class="h-6 ml-2 -rotate-90" src="./src/img/arrow_downward.svg" alt="more"
+          /></a>
         </div>
       </div>
     </section>

@@ -19,15 +19,41 @@ h1 {
   line-height: 4.375rem;
 }
 
+h2 {
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.45rem;
+  letter-spacing: -0.09rem;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.0125rem;
+  letter-spacing: -0.0875rem;
+}
+
 @layer components {
   .btn {
     @apply px-5 py-3 rounded-full w-max;
   }
 }
 
-@media( max-width: 650px ){
+@media (max-width: 650px) {
   h1 {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
