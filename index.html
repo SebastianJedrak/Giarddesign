@@ -48,15 +48,15 @@
     </header>
 
     <!-- HERO BLOCK -->
-    <section class="flex items-center bg-beige ">
-      <div class="px-20 w-[45rem] sm:px-10">
-        <h1 class="mb-11">Nowoczesna aranżacja Twojego ogrodu</h1>
+    <section class="flex items-center bg-beige sm:justify-center ">
+      <div class="px-20 w-[75rem] sm:px-10 sm:text-center md:py-20">
+        <h1 class="mb-11 ">Nowoczesna aranżacja Twojego ogrodu</h1>
         <p class="mb-20">
           Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
           realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
           podejściem do każdego projektu.
         </p>
-        <div class="flex gap-9 sm:flex-col">
+        <div class="flex gap-9 sm:flex-col sm:items-center">
           <button class="btn text-white bg-green">Skontaktuj się z nami</button>
 
           <button class="flex btn border text-green border-green">
@@ -69,8 +69,21 @@
           </button>
         </div>
       </div>
-      <div class=" inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:bg-none"> 
-        <!-- <img class="object-cover" src="./src/img/hero-img.png" alt="garden" /> -->
+      <div
+        class="relative inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:hidden"
+      >
+        <div class="flex  absolute bottom-0 right-0 lg:hidden">
+          <img
+            src="./src/img/arrow_back.svg"
+            alt="backwards"
+            class="h-12  bg-lightBeige p-1 cursor-pointer"
+          />
+          <img
+          src="./src/img/arrow_forward.svg"
+          alt="forwards"
+          class="h-12  bg-lightBeige p-1 cursor-pointer"
+        />
+        </div>
       </div>
     </section>
   </body>
