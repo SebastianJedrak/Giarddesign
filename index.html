@@ -201,9 +201,9 @@
     </section>
 
     <!-- OUR PROJECTS BLOCK -->
-    <section class="relative bg-beige py-40 flex flex-col items-between">
-      <h2 class="mb-24 ml-20 md:ml-0 md:text-center relative z-10">Nasze projekty</h2>
-      <div class="grid max-h-[40rem] overflow-hidden">
+    <section class="bg-beige py-40 flex flex-col items-between">
+      <h2 class="mb-24 ml-20 md:ml-0 md:text-center">Nasze projekty</h2>
+      <div class="grid max-h-[40rem] overflow-hidden relative">
         <div class="grid-item">
           <img src="./src/img/masonry/Photo(0).jpg" alt="Photo(0)" />
           <img src="./src/img/masonry/Photo(1).jpg" alt="Photo(1)" />
@@ -224,11 +224,11 @@
           <img src="./src/img/masonry/Photo(16).jpg" alt="Photo(16)" />
           <img src="./src/img/masonry/Photo(17).jpg" alt="Photo(17)" />
         </div>
-        <div class="grid-item">
-          <img src="./src/img/masonry/Photo(0).jpg" />
-        </div>
+        <div
+          class="absolute h-full w-full bottom-0 bg-gradient-to-t from-beige to-null to-60%"
+        ></div>
       </div>
-      <button class="btn border border-black self-center flex relative z-10">
+      <button class="btn border border-black self-center flex">
         Rozwiń
         <img
           class="h-6 ml-2"
@@ -236,9 +236,6 @@
           alt="more"
         />
       </button>
-      <div
-        class="absolute h-full w-full bottom-0 bg-gradient-to-t  from-beige to-null to-60%"
-      ></div>
     </section>
 
     <!-- INSTAGRAM BLOCK -->
