@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tailwindcss -i ./input.css -o ./main.css",
     "start": "npx tailwindcss -i ./input.css -o ./main.css --watch"
-
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "masonry-layout": "^4.2.2"
+  }
 }
