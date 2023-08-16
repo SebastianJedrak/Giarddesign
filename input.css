@@ -38,9 +38,14 @@ h3 {
 }
 
 
+.grid-masonry {
+  max-height: 40rem;
+}
+
+
 .grid-item-masonry {
   width: 30%;
-  margin: 1% ; 
+  margin: 1%;
 }
 .grid-item-masonry img {
   width: 100%;

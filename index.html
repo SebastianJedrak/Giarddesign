@@ -203,7 +203,7 @@
     <!-- OUR PROJECTS BLOCK -->
     <section class="bg-beige py-40 flex flex-col items-between ">
       <h2 class="mb-24 ml-20 md:ml-0 md:text-center">Nasze projekty</h2>
-      <div class="grid-masonry max-h-[40rem] overflow-hidden relative">
+      <div class="grid-masonry  overflow-hidden relative">
         <div class="grid-item-masonry ">
           <img src="./src/img/masonry/Photo(0).jpg" alt="Photo(0)" />
         </div>
@@ -262,10 +262,18 @@
           class="masonry-overlay absolute h-full w-full bottom-0 bg-gradient-to-t from-beige to-null to-60%"
         ></div>
       </div>
-      <button class="masonry-btn btn border border-black self-center flex">
+      <button class="masonry-btn-open btn border border-black self-center flex">
         Rozwiń
         <img
           class="h-6 ml-2"
+          src="./src/img/arrow_downward-black.svg"
+          alt="more"
+        />
+      </button>
+      <button class="masonry-btn-close btn border border-black self-center flex hidden">
+        Zwiń
+        <img
+          class="h-6 ml-2 rotate-180"
           src="./src/img/arrow_downward-black.svg"
           alt="more"
         />
