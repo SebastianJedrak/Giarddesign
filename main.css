@@ -801,6 +801,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.to-40\% {
+  --tw-gradient-to-position: 40%;
+}
+
+.to-60\% {
+  --tw-gradient-to-position: 60%;
+}
+
+.to-80\% {
+  --tw-gradient-to-position: 80%;
+}
+
 .bg-cover {
   background-size: cover;
 }
