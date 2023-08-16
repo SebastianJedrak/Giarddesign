@@ -37,7 +37,7 @@ h3 {
   letter-spacing: -0.0875rem;
 }
 
-.grid-item { width: 200px; }
+.grid-item-masonry { width: 200px; }
 
 @layer components {
   .btn {

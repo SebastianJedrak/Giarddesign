@@ -560,10 +560,6 @@ video {
   right: 0px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -630,10 +626,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-12 {
@@ -801,16 +793,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-40\% {
-  --tw-gradient-to-position: 40%;
-}
-
 .to-60\% {
   --tw-gradient-to-position: 60%;
-}
-
-.to-80\% {
-  --tw-gradient-to-position: 80%;
 }
 
 .bg-cover {
@@ -923,7 +907,7 @@ h3 {
   letter-spacing: -0.0875rem;
 }
 
-.grid-item {
+.grid-item-masonry {
   width: 200px;
 }
 
