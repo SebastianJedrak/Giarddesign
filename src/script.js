@@ -1,11 +1,20 @@
 import Masonry from "masonry-layout";
 
 // MASONRY
-window.addEventListener("load", () => {
-const grid = document.querySelector(".grid-masonry")
+const masonryGrid = document.querySelector(".grid-masonry");
+const overlay = document.querySelector(".masonry-overlay");
+const masonryBtn = document.querySelector(".masonry-btn");
 
-const masonry = new Masonry(grid, {
+//Display
+window.addEventListener("load", () => {
+  const masonry = new Masonry(masonryGrid, {
     itemSelector: ".grid-item-masonry",
-    percentPosition: true
-})
-}) 
+    percentPosition: true,
+  });
+});
+
+//Show / Hide
+masonryBtn.addEventListener("click", () => {
+  masonryGrid.classList.toggle("max-h-[40rem]");
+  overlay.classList.toggle("h-full");
+});
