@@ -1,4 +1,11 @@
 import Masonry from "masonry-layout";
 
 // MASONRY
-window.addEventListener("load", () => {console.log("object");}) 
+window.addEventListener("load", () => {
+const grid = document.querySelector(".grid-masonry")
+
+const masonry = new Masonry(grid, {
+    itemSelector: ".grid-item-masonry",
+    percentPosition: true
+})
+}) 

@@ -37,7 +37,14 @@ h3 {
   letter-spacing: -0.0875rem;
 }
 
-.grid-item-masonry { width: 200px; }
+
+.grid-item-masonry {
+  width: 30%;
+  margin: 1% ; 
+}
+.grid-item-masonry img {
+  width: 100%;
+}
 
 @layer components {
   .btn {
