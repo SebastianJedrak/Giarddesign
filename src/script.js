@@ -1,16 +1,27 @@
 import Masonry from "masonry-layout";
 import SimpleLightbox from "simplelightbox";
 
+// NAV
+const navOfferDrop = document.querySelector(".nav-offer-drop");
+const navOfferBtn = document.querySelector(".nav-offer-btn");
+
+[navOfferBtn, navOfferDrop].forEach((el) => {
+  el.addEventListener("mouseover", () => {
+    navOfferDrop.classList.remove("hidden");
+  });
+});
+navOfferBtn.addEventListener("mouseleave", () => {
+  navOfferDrop.classList.add("hidden");
+});
+
 // MASONRY
 const masonryGrid = document.querySelector(".grid-masonry");
 const overlay = document.querySelector(".masonry-overlay");
 const masonryBtnOpen = document.querySelector(".masonry-btn-open");
 const masonryBtnClose = document.querySelector(".masonry-btn-close");
-const imgAnchors = masonryGrid.querySelectorAll("a")
+const imgAnchors = masonryGrid.querySelectorAll("a");
 
-new SimpleLightbox(".grid-masonry a")
-
-// imgAnchors.forEach(a => new SimpleLightbox(a, {}))
+new SimpleLightbox(".grid-masonry a");
 
 //Display
 window.addEventListener("load", () => {

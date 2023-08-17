@@ -42,19 +42,29 @@
       <div class="flex sm:justify-around sm:w-4/5">
         <nav>
           <ul class="flex gap-12 sm:gap-4 whitespace-nowrap">
-            <li class="flex cursor-pointer">
+            <li class="flex cursor-pointer relative nav-offer-btn py-2">
               Oferta
               <span class="inline-block h-6 w-6"
-                ><img class="h-6" src="./src/img/expand_more.svg" alt="more"
+                ><img
+                  class="h-6 expand-arrow"
+                  src="./src/img/expand_more.svg"
+                  alt="more"
               /></span>
+              <ul
+                class="absolute top-8 right-1 z-20 bg-lightBeige rounded nav-offer-drop hidden"
+              >
+                <li class="p-3">Oferta 1</li>
+                <li class="p-3">Oferta 2</li>
+                <li class="p-3">Oferta 3</li>
+              </ul>
             </li>
-            <li><a href="#">O firmie</a></li>
-            <li><a href="#">Realizacje</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li class="py-2"><a href="#">O firmie</a></li>
+            <li class="py-2"><a href="#">Realizacje</a></li>
+            <li class="py-2"><a href="#">Kontakt</a></li>
           </ul>
         </nav>
         <img
-          class="ml-12 h-6 cursor-pointer sm:ml-6"
+          class="py-2 ml-12 h-10 cursor-pointer sm:ml-6"
           src="./src/img/glass.svg"
           alt="search"
         />
