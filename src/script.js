@@ -1,9 +1,8 @@
 import Masonry from "masonry-layout";
 import SimpleLightbox from "simplelightbox";
 import Swiper from "swiper";
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import "../node_modules/swiper/swiper.css";
-import "../node_modules/swiper/modules/navigation";
 
 const body = document.querySelector("body");
 
@@ -36,8 +35,11 @@ body.addEventListener("click", (e) => {
 //HERO SLIDE
 
 const swiper = new Swiper(".swiper", {
-  modules: [Navigation],
+  modules: [Navigation, Autoplay],
   loop: true,
+  autoplay: {
+    delay: 4000,
+  },
 
   navigation: {
     nextEl: ".swiper-button-next",
