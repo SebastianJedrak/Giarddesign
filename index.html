@@ -41,7 +41,7 @@
       <img class="w-[115px] sm:mb-5" src="./src/img/logo.svg" alt="logo" />
       <div class="flex sm:justify-around sm:w-4/5">
         <nav>
-          <ul class="flex gap-12 sm:gap-4 whitespace-nowrap">
+          <ul class="flex gap-12 sm:gap-2 whitespace-nowrap ">
             <li class="flex cursor-pointer relative nav-offer-btn py-2">
               Oferta
               <span class="inline-block h-6 w-6"
@@ -51,7 +51,7 @@
                   alt="more"
               /></span>
               <ul
-                class="absolute top-8 right-1 z-20 bg-lightBeige rounded nav-offer-drop hidden"
+                class="absolute top-8 z-20 bg-lightBeige rounded nav-offer-drop hidden"
               >
                 <li class="p-3">Oferta 1</li>
                 <li class="p-3">Oferta 2</li>
@@ -63,11 +63,18 @@
             <li class="py-2"><a href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <img
-          class="py-2 ml-12 h-10 cursor-pointer sm:ml-6"
-          src="./src/img/glass.svg"
-          alt="search"
-        />
+        <div class="relative">
+          <img
+            class="py-2 ml-12 h-10 cursor-pointer sm:ml-5 search-btn"
+            src="./src/img/glass.svg"
+            alt="search"
+          />
+          <input
+            class="absolute border border-black rounded right-0 h-9 z-20 bg-lightBeige search-input hidden"
+            type="search"
+            placeholder=" Search"
+          />
+        </div>
       </div>
     </header>
 

@@ -1,7 +1,10 @@
 import Masonry from "masonry-layout";
 import SimpleLightbox from "simplelightbox";
 
+const body = document.querySelector("body");
+
 // NAV
+//Dropdown
 const navOfferDrop = document.querySelector(".nav-offer-drop");
 const navOfferBtn = document.querySelector(".nav-offer-btn");
 
@@ -12,6 +15,19 @@ const navOfferBtn = document.querySelector(".nav-offer-btn");
 });
 navOfferBtn.addEventListener("mouseleave", () => {
   navOfferDrop.classList.add("hidden");
+});
+
+
+//Search
+const navSearchBtn = document.querySelector(".search-btn");
+const navSearchInput = document.querySelector(".search-input");
+
+navSearchBtn.addEventListener("click", () => {
+  navSearchInput.classList.toggle("hidden");
+});
+body.addEventListener("click", (e) => {
+  if (e.target === navSearchBtn || e.target === navSearchInput) return;
+  navSearchInput.classList.add("hidden");
 });
 
 // MASONRY
