@@ -35,7 +35,6 @@ const masonryGrid = document.querySelector(".grid-masonry");
 const overlay = document.querySelector(".masonry-overlay");
 const masonryBtnOpen = document.querySelector(".masonry-btn-open");
 const masonryBtnClose = document.querySelector(".masonry-btn-close");
-const imgAnchors = masonryGrid.querySelectorAll("a");
 
 new SimpleLightbox(".grid-masonry a");
 
@@ -61,7 +60,7 @@ masonryBtnOpen.addEventListener("click", () => {
   masonryGrid.animate(expandKeyframes, ExpandOptions);
 
   setTimeout(() => {
-    overlay.classList.toggle("h-full");
+    overlay.classList.toggle("h-2/5");
     masonryBtnOpen.classList.toggle("hidden");
     masonryBtnClose.classList.toggle("hidden");
   }, 1000);
@@ -74,7 +73,7 @@ masonryBtnClose.addEventListener("click", () => {
     direction: "reverse",
     duration: 500,
   });
-  overlay.classList.toggle("h-full");
+  overlay.classList.toggle("h-2/5");
   masonryBtnOpen.classList.toggle("hidden");
   masonryBtnClose.classList.toggle("hidden");
 });
