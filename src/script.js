@@ -45,7 +45,6 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-swiper.init()
 
 // MASONRY
 const masonryGrid = document.querySelector(".grid-masonry");
