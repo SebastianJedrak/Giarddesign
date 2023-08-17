@@ -104,21 +104,40 @@
           </button>
         </div>
       </div>
-      <div
-        class="relative inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:hidden"
-      >
-        <div class="flex absolute bottom-0 right-0 lg:hidden">
-          <img
-            src="./src/img/arrow_back.svg"
-            alt="backwards"
-            class="h-12 bg-lightBeige p-1 cursor-pointer"
-          />
-          <img
-            src="./src/img/arrow_forward.svg"
-            alt="forwards"
-            class="h-12 bg-lightBeige p-1 cursor-pointer"
-          />
+
+      <div class="swiper w-30 h-30 relative">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div
+              class="relative inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:hidden"
+            ></div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="relative inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:hidden"
+            ></div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="relative inline-block min-h-[700px] w-full bg-[url('./src/img/hero-img.png')] bg-no-repeat bg-cover md:hidden"
+            ></div>
+          </div>
         </div>
+          <div class="swiper-button-prev absolute bottom-10 right-10 z-20 lg:hidden">
+            <img
+              src="./src/img/arrow_back.svg"
+              alt="backwards"
+              class="h-12 bg-lightBeige p-1 cursor-pointer"
+            />
+          </div>
+          <div class="swiper-button-next absolute bottom-10 right-10 z-20 lg:hidden">
+            <img
+              src="./src/img/arrow_forward.svg"
+              alt="forwards"
+              class="h-12 bg-lightBeige p-1 cursor-pointer"
+            />
+          </div>
       </div>
     </section>
 

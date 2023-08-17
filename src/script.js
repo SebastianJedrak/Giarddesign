@@ -1,5 +1,9 @@
 import Masonry from "masonry-layout";
 import SimpleLightbox from "simplelightbox";
+import Swiper from "swiper";
+import { Navigation } from 'swiper/modules';
+import "../node_modules/swiper/swiper.css";
+import "../node_modules/swiper/modules/navigation";
 
 const body = document.querySelector("body");
 
@@ -17,7 +21,6 @@ navOfferBtn.addEventListener("mouseleave", () => {
   navOfferDrop.classList.add("hidden");
 });
 
-
 //Search
 const navSearchBtn = document.querySelector(".search-btn");
 const navSearchInput = document.querySelector(".search-input");
@@ -29,6 +32,20 @@ body.addEventListener("click", (e) => {
   if (e.target === navSearchBtn || e.target === navSearchInput) return;
   navSearchInput.classList.add("hidden");
 });
+
+//HERO SLIDE
+
+const swiper = new Swiper(".swiper", {
+  modules: [Navigation],
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+swiper.init()
 
 // MASONRY
 const masonryGrid = document.querySelector(".grid-masonry");
