@@ -80,11 +80,11 @@ h3 {
 }
 
 .btn:hover {
-  animation: scaleBtn 0.2s linear forwards;
+  animation: scaleBtn 0.1s linear forwards;
 }
 
 a:hover {
-  animation: lightAnchor 0.2s linear forwards;
+  animation: lightAnchor 0.1s linear forwards;
 }
 
 @media (max-width: 650px) {
