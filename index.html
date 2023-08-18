@@ -42,20 +42,22 @@
       <div class="flex sm:justify-around sm:w-4/5">
         <nav>
           <ul class="flex gap-12 sm:gap-2 whitespace-nowrap">
-            <li class="flex cursor-pointer relative nav-offer-btn py-2">
-              Oferta
-              <span class="inline-block h-6 w-6"
-                ><img
-                  class="h-6 expand-arrow"
-                  src="./src/img/expand_more.svg"
-                  alt="more"
-              /></span>
+            <li class="cursor-pointer relative nav-offer-btn py-2">
+              <a href="#offer-section" class="flex">
+                Oferta
+                <span class="inline-block h-6 w-6"
+                  ><img
+                    class="h-6 expand-arrow"
+                    src="./src/img/expand_more.svg"
+                    alt="more" /></span
+              ></a>
+
               <ul
                 class="absolute top-8 z-20 bg-lightBeige rounded nav-offer-drop hidden"
               >
-                <li class="p-3">Oferta 1</li>
-                <li class="p-3">Oferta 2</li>
-                <li class="p-3">Oferta 3</li>
+                <a href="#offer-section"><li class="p-3">Oferta 1</li></a>
+                <a href="#offer-section"><li class="p-3">Oferta 2</li></a>
+                <a href="#offer-section"><li class="p-3">Oferta 3</li></a>
               </ul>
             </li>
             <li class="py-2"><a href="#">O firmie</a></li>
@@ -144,7 +146,7 @@
     </section>
 
     <!-- OFFER BLOCK -->
-    <section class="bg-lightBeige py-40 lg:px-20 sm:px-10">
+    <section id="offer-section" class="bg-lightBeige py-40 lg:px-20 sm:px-10">
       <div class="mb-20 ml-52 lg:text-center lg:ml-0">
         <h2 class="mb-8">Działamy kompleksowo</h2>
         <p class="w-3/5 lg:w-full">
