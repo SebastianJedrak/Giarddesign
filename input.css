@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -41,11 +41,9 @@ h3 {
   letter-spacing: -0.0875rem;
 }
 
-
 .grid-masonry {
   max-height: 40rem;
 }
-
 
 .grid-item-masonry {
   width: 30%;
@@ -63,17 +61,30 @@ h3 {
 
 @keyframes scaleBtn {
   from {
-    scale: 1.0;
-    filter:brightness(1)
+    scale: 1;
+    filter: brightness(1);
   }
   to {
     scale: 1.05;
-    filter:brightness(1.1)
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes lightAnchor {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(1.15);
   }
 }
 
 .btn:hover {
-  animation: scaleBtn .2s linear forwards
+  animation: scaleBtn 0.2s linear forwards;
+}
+
+a:hover {
+  animation: lightAnchor 0.2s linear forwards;
 }
 
 @media (max-width: 650px) {
