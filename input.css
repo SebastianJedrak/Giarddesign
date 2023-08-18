@@ -61,6 +61,21 @@ h3 {
   }
 }
 
+@keyframes scaleBtn {
+  from {
+    scale: 1.0;
+    filter:brightness(1)
+  }
+  to {
+    scale: 1.05;
+    filter:brightness(1.1)
+  }
+}
+
+.btn:hover {
+  animation: scaleBtn .2s linear forwards
+}
+
 @media (max-width: 650px) {
   h1 {
     font-size: 2rem;
