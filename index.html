@@ -81,7 +81,7 @@
     </header>
 
     <!-- HERO BLOCK -->
-    <section class="flex items-center bg-beige sm:justify-center">
+    <section id="hero-section" class="flex items-center bg-beige sm:justify-center">
       <div class="px-20 w-[75rem] sm:px-10 sm:text-center md:py-20">
         <h1 class="mb-11">
           Nowoczesna <br />
@@ -94,16 +94,20 @@
           podejściem do każdego projektu.
         </p>
         <div class="flex gap-9 sm:flex-col sm:items-center">
-          <button class="btn text-white bg-green">Skontaktuj się z nami</button>
-
-          <button class="flex btn border text-green border-green">
-            Zobacz nasze realizacje
-            <img
-              class="h-6 ml-2"
-              src="./src/img/arrow_downward.svg"
-              alt="more"
-            />
-          </button>
+          <a href="#contact-section"
+            ><button class="btn text-white bg-green">
+              Skontaktuj się z nami
+            </button></a
+          >
+          <a href="#projects-section">
+            <button class="flex btn border text-green border-green">
+              Zobacz nasze realizacje
+              <img
+                class="h-6 ml-2"
+                src="./src/img/arrow_downward.svg"
+                alt="more"
+              /></button
+          ></a>
         </div>
       </div>
 
@@ -169,7 +173,7 @@
             Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
             wykorzystaniem istniejącej przestrzeni.
           </p>
-          <a href="#" class="flex text-green border-b border-b-green w-fit"
+          <a href="#projects-section" class="flex text-green border-b border-b-green w-fit"
             >Dowiedz się więcej
             <img
               class="h-6 ml-2 -rotate-90"
@@ -211,7 +215,7 @@
             Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
             zaawansowanych technologii.
           </p>
-          <a href="#" class="flex text-green border-b border-b-green w-fit"
+          <a href="#hero-section" class="flex text-green border-b border-b-green w-fit"
             >Zobacz nasze realizacje
             <img
               class="h-6 ml-2 -rotate-90"
@@ -223,7 +227,10 @@
     </section>
 
     <!-- ABOUT BLOCK -->
-    <section id="about-section" class="flex items-center bg-green sm:justify-center text-white">
+    <section
+      id="about-section"
+      class="flex items-center bg-green sm:justify-center text-white"
+    >
       <div
         class="inline-block min-h-[700px] w-full bg-[url('./src/img/about-img.png')] bg-no-repeat bg-cover md:hidden"
       ></div>
@@ -254,7 +261,10 @@
     </section>
 
     <!-- OUR PROJECTS BLOCK -->
-    <section id="projects-section" class="bg-beige py-40 flex flex-col items-between">
+    <section
+      id="projects-section"
+      class="bg-beige py-40 flex flex-col items-between"
+    >
       <h2 class="mb-24 ml-20 md:ml-0 md:text-center">Nasze projekty</h2>
       <div class="grid-masonry overflow-hidden relative">
         <div class="grid-item-masonry">
